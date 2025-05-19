@@ -1,4 +1,3 @@
-``` 
 import streamlit as st 
 import pandas as pd 
 import matplotlib.pyplot as plt 
@@ -38,19 +37,17 @@ st.pyplot(fig)
 # Mostrar datos de mercados 
 st.subheader("Segmentos de Mercado") 
 mercados_filtrados = mercados[mercados["País"] == pais_seleccionado] 
-st.dataframe(mercados_filtrados) 
-# Mostrar barreras de entrada 
-st.subheader("Barreras de Entrada") 
-barreras_filtradas = barreras[barreras["País"] == pais_seleccionado] 
-st.dataframe(barreras_filtradas) 
-# Análisis Comparativo 
-st.subheader("Análisis Comparativo") 
-fig2, ax2 = plt.subplots(figsize=(8, 5)) 
-ax2.bar(mercados["País"], mercados["Tamaño del Mercado (USD millones)"], 
-color='#F39C12') 
-ax2.set_xlabel("País") 
-ax2.set_ylabel("Tamaño del Mercado (USD millones)") 
-ax2.set_title("Comparación de Tamaños de Mercado") 
-plt.xticks(rotation=45) 
-st.pyplot(fig2) 
-``` 
+st.dataframe(mercados_filtrados)
+# Mostrar barreras de entrada
+st.subheader("Barreras de Entrada")
+barreras_filtradas = barreras[barreras["País"] == pais_seleccionado]
+st.dataframe(barreras_filtradas)
+# Análisis Comparativo
+st.subheader("Análisis Comparativo")
+fig2, ax2 = plt.subplots(figsize=(8, 5))
+ax2.bar(mercados["País"], mercados["Tamaño del Mercado (USD millones)"], color='#F39C12')
+ax2.set_xlabel("País")
+ax2.set_ylabel("Tamaño del Mercado (USD millones)")
+ax2.set_title("Comparación de Tamaños de Mercado")
+plt.xticks(rotation=45)
+st.pyplot(fig2)
