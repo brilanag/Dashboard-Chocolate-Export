@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd 
 import matplotlib.pyplot as plt 
 
-# URLs corregidas (reemplaza TU_USUARIO por tu nombre de usuario real en GitHub)
-clientes_url = "https://raw.githubusercontent.com/TU_USUARIO/Dashboard-Chocolate-Export/main/clientes.csv"
-mercados_url = "https://raw.githubusercontent.com/TU_USUARIO/Dashboard-Chocolate-Export/main/mercados.csv"
-exportaciones_url = "https://raw.githubusercontent.com/TU_USUARIO/Dashboard-Chocolate-Export/main/exportaciones.csv"
-barreras_url = "https://raw.githubusercontent.com/TU_USUARIO/Dashboard-Chocolate-Export/main/barreras.csv"
+# URLs corregidas (brilanag)
+clientes_url = "https://raw.githubusercontent.com/brilanag/Dashboard-Chocolate-Export/main/clientes.csv"
+mercados_url = "https://raw.githubusercontent.com/brilanag/Dashboard-Chocolate-Export/main/mercados.csv"
+exportaciones_url = "https://raw.githubusercontent.com/brilanag/Dashboard-Chocolate-Export/main/exportaciones.csv"
+barreras_url = "https://raw.githubusercontent.com/brilanag/Dashboard-Chocolate-Export/main/barreras.csv"
 
 # Cargar datos
 clientes = pd.read_csv(clientes_url) 
