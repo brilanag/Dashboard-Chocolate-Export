@@ -15,12 +15,7 @@ st.title("Dashboard Interactivo de Exportaciones de Chocolates")
 # Filtro de país 
 paises = exportaciones["País"].unique() 
 pais_seleccionado = st.selectbox("Selecciona un país para ver los detalles", paises) 
-# Mostrar datos de clientes 
-UNIVERSIDAD NACIONAL DE COSTA RICA 
-FACULTAD DE CIENCIAS SOCIALES 
-ESCUELA DE RELACIONES INTERNACIONALES 
-COMERCIO Y NEGOCIOS INTERNACIONALES 
-DASHBOARD INTERACTIVO 
+# Mostrar datos de clientes  
 st.subheader("Clientes") 
 clientes_filtrados = clientes[clientes["País"] == pais_seleccionado] 
 st.dataframe(clientes_filtrados) 
