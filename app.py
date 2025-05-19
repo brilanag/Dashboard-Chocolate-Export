@@ -36,4 +36,4 @@ st.dataframe(clientes_filtrados)
 st.subheader("Exportaciones de Chocolates") 
 exportaciones_filtradas = exportaciones[exportaciones["País"] == pais_seleccionado] 
 fig, ax = plt.subplots() 
-ax.bar(exportaciones_filtradas["Año"], exportaciones_filtradas["Exportaciones (USD]()
+ax.bar(exportaciones_filtradas["Año"], exportaciones_filtradas["Exportaciones (USD millones)"], color='#2E86C1')
